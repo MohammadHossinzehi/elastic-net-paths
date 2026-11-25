@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enetpath"
+version = "1.0.0"
+description = "glmnet style elastic net regularisation paths for Gaussian, logistic and Poisson GLMs in pure NumPy"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22"]
+
+[project.scripts]
+enetpath = "enetpath.cli:main"
+
+[tool.setuptools]
+packages = ["enetpath"]
